@@ -34,7 +34,7 @@ class HtmlElement:
             lines.append(e.__str(indent + 1))
 
         lines.append(f'{i}</{self.name}>')
-        
+
         return '\n'.join(lines)
 
     def __str__(self):
@@ -60,6 +60,7 @@ class HtmlBuilder:
             HtmlElement(child_name, child_text)
         )
         return self
+
 
 builder = HtmlBuilder('ul')
 # builder.add_child('li', 'hello')

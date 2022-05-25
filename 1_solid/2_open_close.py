@@ -1,6 +1,4 @@
 from enum import Enum
-from itertools import product
-from re import L
 
 
 class Color(Enum):
